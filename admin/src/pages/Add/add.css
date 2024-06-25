@@ -1,0 +1,92 @@
+/* Container for the add product form */
+.add {
+    /* margin: 50px auto; */
+    margin: 10px 100px;
+    padding: 20px;
+    max-width: 600px;
+    /* background-color: #f9f9f9; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+/* Flex column layout for form elements */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}   
+
+/* Flex layout for category and price fields */
+.add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Flex column layout for image upload */
+.add-img-upload {
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+/* Styling for form labels */
+.add p {
+    margin: 0 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Styling for input and textarea fields */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Styling for image upload label */
+label {
+    cursor: pointer;
+}
+
+label img {
+    /* width: 100px; */
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Styling for the submit button */
+.add-btn {
+    padding: 10px 20px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #e04d2b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .add-category-price {
+        flex-direction: column;
+    }
+}
+
+
+.add input[type="text"]:focus,
+.add input[type="number"]:focus,
+.add textarea:focus,
+.add select:focus {
+    border: 1px solid tomato; 
+}

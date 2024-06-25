@@ -1,0 +1,118 @@
+/* footer.css */
+
+/* Base styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    justify-content: space-between;
+  }
+  
+  .footer-content-left {
+    flex: 0 0 100%; /* Take full width on small screens */
+    max-width: 100%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add some space between sections */
+  }
+  
+  .footer-content-left img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content-left p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .footer-content-center,
+  .footer-content-right {
+    flex: 0 0 50%; /* Take half width on medium screens and above */
+    max-width: calc(50% - 10px); /* Adjust width and space between sections */
+  }
+  
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content-center ul,
+  .footer-content-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content-center ul li,
+  .footer-content-right ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-content-center ul li a,
+  .footer-content-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-content-center ul li a:hover,
+  .footer-content-right ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer hr {
+    border: 1px solid white;
+    border-top: 1px solid #ffffff;
+    margin: 20px 0;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Small screens (phones) */
+  @media (max-width: 576px) {
+    .footer-content-center,
+    .footer-content-right {
+      flex: 0 0 100%; /* Take full width on small screens */
+      max-width: 100%;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+      flex: 0 0 calc(50% - 10px); /* Take half width with some space between sections */
+      max-width: calc(50% - 10px);
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media (min-width: 769px) {
+    .footer-content-left {
+      flex: 0 0 30%; /* Adjust width for left section on larger screens */
+      max-width: 30%;
+    }
+  
+    .footer-content-center,
+    .footer-content-right {
+      flex: 0 0 calc(35% - 10px); /* Adjust width for center and right sections on larger screens */
+      max-width: calc(35% - 10px);
+    }
+  }
+  
